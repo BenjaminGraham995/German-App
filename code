@@ -1,0 +1,21 @@
+import random
+
+German_words = {'hallo': 'Hello', 'eins': 'one'}
+
+def Guess():
+    while True:
+        random_word = random.choice(list(German_words.keys()))
+        answer = input(f"What does '{random_word}' mean? ")
+        if answer.lower() == German_words[random_word].lower():
+            print("Correct")
+        else:
+            print(f"No, the answer is '{German_words[random_word]}'")
+        
+        # Ask the user if they want to play again
+        play_again = input("Do you want to guess another word? (yes/no): ").strip().lower()
+        if play_again != 'yes':
+            print("Goodbye!")
+            break
+
+# Call the Guess function
+Guess()
