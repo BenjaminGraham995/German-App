@@ -22,4 +22,7 @@ Guess()
 
 
 #Create a running total of how many answers are corret 
+£
+# def script(): 
+    answer = input("Welcome to the german quiz, what quiz would you like to do easy, medium , hard? (e/m/h)?")
 
